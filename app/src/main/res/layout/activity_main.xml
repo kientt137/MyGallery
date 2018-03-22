@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@drawable/shadow_actionbar"
+    android:elevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorActionBar">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="My Gallery"
+            android:textSize="20sp"
+            android:textColor="#616161"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/btn_camera"
+            android:layout_width="56dp"
+            android:padding="12dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_camera"/>
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContent">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </android.support.v7.widget.RecyclerView>
-
+</LinearLayout>
 </LinearLayout>

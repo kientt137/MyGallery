@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorActionBar">#F5F5F5</color>
+    <color name="colorContent">#FAFAFA</color>
+    <color name="colorStatusbar">#E0E0E0</color>
+    <color name="colorStatusbarBlack">#000000</color>
 </resources>
